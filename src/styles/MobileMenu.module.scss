@@ -1,0 +1,46 @@
+@import "./vars";
+
+.mobile-menu {
+  left: 0;
+  width: 100%;
+  background-color: $--white;
+  position: absolute;
+  padding: 24px;
+  top: 61px;
+  height: 100vh;
+  margin: 0;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.mobile-menu ul {
+  padding: 0;
+  margin: 24px 0 0;
+  list-style: none;
+}
+
+.mobile-menu ul:nth-child(1) {
+  border-bottom: 1px solid $--very-light-pink;
+}
+
+.mobile-menu ul li {
+  margin-bottom: 24px;
+}
+
+.email a {
+  font-size: $--sm;
+  font-weight: 300 !important;
+}
+
+.mobile-menu ul .sign-out a {
+  font-size: $--md;
+  color: $--red !important;
+}
+
+.mobile-menu ul:last-child {
+  bottom: 0;
+}

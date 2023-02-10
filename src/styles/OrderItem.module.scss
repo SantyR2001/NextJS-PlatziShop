@@ -1,0 +1,36 @@
+@import "./vars";
+
+.Order-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+.Order-item figure {
+  margin: 0;
+}
+.Order-item figure img {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.Order-item p:nth-child(2) {
+  color: var(--very-light-pink);
+}
+.Order-item p:nth-child(3) {
+  font-size: var(--md);
+  font-weight: bold;
+}
+
+.image-close {
+  padding: 6px;
+  background-color: var(--white);
+  border-radius: 50%;
+}
+
+.image-close:hover {
+  cursor: pointer;
+  background-color: var(--text-input-field);
+}

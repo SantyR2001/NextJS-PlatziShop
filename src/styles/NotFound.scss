@@ -1,0 +1,24 @@
+@import "./vars";
+
+.container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-404 {
+  height: 200px;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+  background-color: $--text-input-field;
+}
+
+.not-found-title {
+  color: $--red;
+  padding-bottom: 5px;
+  border-bottom: 2px solid $--very-light-pink;
+}

@@ -1,0 +1,32 @@
+@import 'vars';
+
+.primary-button {
+  background-color: $--hospital-green;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  font-size: $--md;
+  font-weight: bold;
+  height: 46px;
+  transition: transform 0.2s;
+}
+
+.secondary-button {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid $--hospital-green;
+  color: $--hospital-green;
+  width: 300px;
+  cursor: pointer;
+  font-size: $--md;
+  font-weight: bold;
+  height: 46px;
+  transition: transform 0.2s;
+}
+
+.secondary-button:hover,
+.primary-button:hover {
+  transform: scale(1.05);
+}

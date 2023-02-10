@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+
+.primary-button {
+  background-color: var(--hospital-green);
+  border-radius: 8px;
+  border: none;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 46px;
+  transition: transform 0.2s;
+}
+
+.secondary-button {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid var(--hospital-green);
+  color: var(--hospital-green);
+  width: 300px;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 46px;
+  transition: transform 0.2s;
+}
+
+.secondary-button:hover,
+.primary-button:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 640px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 140px);
+    gap: 26px;
+  }
+
+  .product-card {
+    width: 140px;
+  }
+
+  .product-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  .menu {
+    display: block;
+    cursor: pointer;
+  }
+  .display-none-desk {
+    display: none !important;
+  }
+  .product-detail {
+    width: 100%;
+    border: none;
+  }
+}
+
+@media (min-width: 641px) {
+  .display-none-mob {
+    display: none;
+  }
+}
