@@ -22,10 +22,10 @@ function Login() {
       <div className="form-container">
         <Image src={logoYardSale} alt="logo" className="logo" />
         <form ref={form} className="form">
-          <label className="label"> Email address </label>
-          <input type="text" name="email" placeholder="platzi@example.com" className="input input-password" />
-          <label className="label"> Password </label>
-          <input type="password" name="password" placeholder="*********" className="input input-password" />
+          <label htmlFor='email' className="label"> Email address </label>
+          <input type="text" id='email' name="email" placeholder="platzi@example.com" className="input input-password" />
+          <label htmlFor='password' className="label"> Password </label>
+          <input type="password" name="password" id='password' placeholder="*********" className="input input-password" />
           <button onClick={handleSubmit} className="primary-button login-button">
             Log in
           </button>

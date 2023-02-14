@@ -5,7 +5,7 @@ import Button from '../components/Buttons';
 import logoYardSale from '@logos/logo_yard_sale.svg';
 import '../styles/AccountData.scss';
 
-function AccountData(props) {
+function AccountData() {
   return (
     <div className="login">
       <div className="form-container">

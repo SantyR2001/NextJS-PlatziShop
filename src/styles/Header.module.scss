@@ -24,9 +24,10 @@
   display: none;
 }
 
-.navLogo {
+.nav-logo {
   width: 100px;
-  padding-block: 20px;
+  top: 20px;
+  position: absolute;
 }
 
 .navbarLeft ul,
@@ -85,5 +86,8 @@
 @media (max-width: 640px) {
   .navLogo {
     display: none !important;
+  }
+  .menu{
+    display: block;
   }
 }

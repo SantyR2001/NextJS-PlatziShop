@@ -1,7 +1,7 @@
-import React from "react";
-import "../styles/NotFound.scss";
+import React from 'react';
+import '../styles/NotFound.scss';
 
-function NotFound(props) {
+function NotFound() {
   return (
     <div className="container">
       <div className="container-404">

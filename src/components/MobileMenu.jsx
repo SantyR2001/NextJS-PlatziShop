@@ -5,11 +5,11 @@ import styles from '@styles/MobileMenu.module.scss';
 
 const MobileMenu = () => {
   return (
-    <div className={styles.MobileMenu}>
-      <div className="mobile-menu inactive disp-none-mob">
+    <div className={styles['mobile-menu']}>
+      <div className={`${styles['mobile-menu']} ${styles['inactive']} ${styles['display-none-mob']}`}>
         <ul>
           <li>
-            <Link className="title">CATEGORIES</Link>
+            <p className={styles.title}>CATEGORIES</p>
           </li>
 
           <li>
@@ -46,11 +46,11 @@ const MobileMenu = () => {
           </li>
         </ul>
         <ul>
-          <li className="email">
+          <li className={styles.email}>
             <Link href="/">Platzi@example.com</Link>
           </li>
 
-          <li className="sign-out">
+          <li className={styles['sign-out']}>
             <Link href="/">
               Sign out <FaSignOutAlt />
             </Link>

@@ -1,22 +1,22 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "../pages/Login";
-import Layout from "../containers/Layout";
-import Home from "../pages/Home";
-import NotFound from "../pages/NotFound";
-import ChangePassword from "../pages/ChangePassword";
-import EmailSent from "../pages/EmailSent";
-import AccountData from "../pages/AccountData";
-import Account from "../pages/Account";
-import PasswordRecovery from "../pages/PasswordRecovery";
-import CreateAccount from "../pages/CreateAccount";
-import Checkout from "../pages/Checkout";
-import Orders from "../pages/Orders";
-import useInitialState from "../hooks/useInitialState";
-import AppContext from "../context/AppContext";
-import "../styles/global.css";
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Login from '../pages/Login';
+import Layout from '../containers/Layout';
+import Home from '../pages/Home';
+import NotFound from '../pages/NotFound';
+import ChangePassword from '../pages/ChangePassword';
+import EmailSent from '../pages/EmailSent';
+import AccountData from '../pages/AccountData';
+import Account from '../pages/Account';
+import PasswordRecovery from '../pages/PasswordRecovery';
+import CreateAccount from '../pages/CreateAccount';
+import Checkout from '../pages/Checkout';
+import Orders from '../pages/Orders';
+import useInitialState from '../hooks/useInitialState';
+import AppContext from '../context/AppContext';
+import '../styles/global.css';
 
-function App(props) {
+function App() {
   const initialState = useInitialState();
   return (
     <AppContext.Provider value={initialState}>

@@ -7,9 +7,7 @@ const Checkout = () => {
   return (
     <>
       <Head>
-        <title>
-          PlatziShop - Checkout
-        </title>
+        <title>PlatziShop - Checkout</title>
       </Head>
       <div className={styles.Checkout}>
         <div className={styles['Checkout-container']}>

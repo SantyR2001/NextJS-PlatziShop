@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-function Checkout(props) {
+function Checkout() {
   return <div></div>;
 }
 

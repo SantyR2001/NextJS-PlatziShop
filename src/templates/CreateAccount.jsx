@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-function CreateAccount(props) {
+function CreateAccount() {
   return <div></div>;
 }
 

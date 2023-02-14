@@ -2,6 +2,7 @@
 
 .primary-button {
   background-color: $--hospital-green;
+  text-align: center;
   border-radius: 8px;
   border: none;
   color: white;
@@ -24,6 +25,15 @@
   font-weight: bold;
   height: 46px;
   transition: transform 0.2s;
+}
+
+.add-to-cart-btn {
+  width: calc(100% - 48px) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 24px;
 }
 
 .secondary-button:hover,

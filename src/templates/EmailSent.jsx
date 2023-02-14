@@ -3,8 +3,9 @@ import Button from '../components/Buttons';
 import emailIcon from '@icons/email.svg';
 import Image from 'next/image';
 import '../styles/EmailSent.module.scss';
+import Link from 'next/link';
 
-function EmailSent(props) {
+function EmailSent() {
   return (
     <div className="login">
       <div className="form-container">
@@ -16,7 +17,7 @@ function EmailSent(props) {
         </div>
         <Button value="Log in" styleName={['primary-button']['login-button']} />
         <p className="resend">
-          <span>didn't receive the email?</span> <a href="/">Resend</a>
+          <span>didn't receive the email?</span> <Link href="/">Resend</Link>
         </p>
       </div>
     </div>

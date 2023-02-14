@@ -1,6 +1,6 @@
-import React from "react";
-import Button from "../components/Buttons";
-import Image from "next/image";
+import React from 'react';
+import Button from '../components/Buttons';
+import Image from 'next/image';
 
 function ChangePassword() {
   return (
@@ -11,30 +11,16 @@ function ChangePassword() {
         <p className="subtitle">Enter a new password for your account</p>
         <form className="form">
           <label htmlFor="password" className="label">
-            {" "}
-            Password{" "}
+            {' '}
+            Password{' '}
           </label>
-          <input
-            type="password"
-            id="password"
-            placeholder="*********"
-            className="input input-password"
-          />
+          <input type="password" id="password" placeholder="*********" className="input input-password" />
           <label htmlFor="new-password" className="label">
-            {" "}
-            Re-enter password{" "}
+            {' '}
+            Re-enter password{' '}
           </label>
-          <input
-            type="password"
-            id="new-password"
-            placeholder="*********"
-            className="input input-password"
-          />
-          <Button
-            value="Confirm"
-            type="submit"
-            styleName="primary-button login-button"
-          />
+          <input type="password" id="new-password" placeholder="*********" className="input input-password" />
+          <Button value="Confirm" type="submit" styleName="primary-button login-button" />
         </form>
       </div>
     </div>

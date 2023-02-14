@@ -5,7 +5,7 @@ import styles from '@styles/DesktopMenu.module.scss';
 
 function Menu() {
   return (
-    <div class={styles.DesktopMenu}>
+    <div class={styles['desktop-menu']}>
       <ul>
         <li>
           <Link className={styles.title} href="/orders">

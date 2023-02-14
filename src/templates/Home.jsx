@@ -1,8 +1,8 @@
-import React from "react";
-import Header from "../components/Header";
-import ProductList from "@containers/ProductList";
+import React from 'react';
+import Header from '../components/Header';
+import ProductList from '@containers/ProductList';
 
-function Home(props) {
+function Home() {
   return (
     <div>
       <Header />

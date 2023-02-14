@@ -4,7 +4,7 @@ import Image from 'next/image';
 import logoYardSale from '../assets/logos/logo_yard_sale.svg';
 import styles from '@styles/Account.module.scss';
 
-function Account(props) {
+function Account() {
   return (
     <div className={styles.login}>
       <div className={styles['form-container']}>
@@ -28,7 +28,7 @@ function Account(props) {
             </label>
             <input type="password" id="password" placeholder="*********" className={styles['input']['input-password']} />
           </div>
-          <Button children="Create" styleName={['primary-button']['login-button']} />
+          <Button styleName={['primary-button']['login-button']}>Create</Button>
         </form>
       </div>
     </div>

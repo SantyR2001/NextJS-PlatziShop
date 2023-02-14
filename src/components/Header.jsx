@@ -17,9 +17,9 @@ function Header() {
 
   return (
     <nav className={styles.nav}>
-      <Image onClick={() => toggleShow('showMobileMenu')} src={iconMenu} alt="menu" className={styles.menu} />
+      <Image onClick={() => toggleShow('showMobileMenu')} src={iconMenu} alt="mobile-menu" className={styles.menu} />
       <div className={styles.navbarLeft}>
-        <Image src={logo} alt="logo" className={`${styles.navLogo}${styles['display-none-desk']}}`} />
+        <Image src={logo} alt="logo" className={`${styles['nav-logo']}${styles['display-none-desk']}}`} />
         <ul className={styles['display-none-desk']}>
           <li>
             <Link href="/">All</Link>
