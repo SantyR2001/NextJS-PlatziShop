@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
 import Button from "../components/Buttons";
-import "../styles/Login.scss";
 import logoYardSale from "@logos/logo_yard_sale.svg";
+import Image from "next/image";
+import "../styles/Login.scss";
 
 function Login() {
   const form = useRef(null);
@@ -19,7 +20,7 @@ function Login() {
   return (
     <div className="login">
       <div className="form-container">
-        <img src={logoYardSale} alt="logo" className="logo" />
+        <Image src={logoYardSale} alt="logo" className="logo" />
         <form ref={form} className="form">
           <label className="label"> Email address </label>
           <input

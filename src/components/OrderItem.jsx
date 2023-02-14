@@ -9,17 +9,17 @@ function OrderItem({ product }) {
   return (
     <div className={styles['order-item']}>
       <figure>
-        <Image src={product.images[0]} className={styles["order-img"]} alt="product-img" />
+        <Image src={product?.images[0]} className={styles["order-img"]} alt="product-img" />
       </figure>
-      <p>{product.title}</p>
-      <p>${product.price}</p>
+      <p>{product?.title}</p>
+      <p>${product?.price}</p>
       <Image
         src={close}
         className={styles["image-close"]}
         alt="close"
         onClick={() => removeFromCart(product)}
-        width={100}
-        height={100}
+        width={15}
+        height={15}
       />
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaSignOutAlt } from "react-icons/fa";
+import Link from "next/link";
 import styles from "@styles/DesktopMenu.module.scss";
 
 function Menu(props) {
@@ -7,17 +8,17 @@ function Menu(props) {
     <div class={styles.DesktopMenu}>
       <ul>
         <li>
-          <a href="/orders">My orders</a>
+          <Link className={styles.title} href="/orders">My orders</Link>
         </li>
 
         <li>
-          <a href="/account">My account</a>
+          <Link href="/account">My account</Link>
         </li>
 
         <li>
-          <a href="/">
+          <Link href="/">
             Sign out <FaSignOutAlt />{" "}
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

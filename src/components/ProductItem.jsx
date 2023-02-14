@@ -31,8 +31,8 @@ function ProductItem({ product }) {
           onClick={() => toggleShow("showProductDetail")}
           src={product.images[0] ? product.images[0] : defaultImage}
           alt={product.title}
-          width={100}
-        height={100}
+          width={240}
+        height={240}
         />
         <div className={styles["product-card-info"]}>
           <div>
