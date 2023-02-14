@@ -11,7 +11,7 @@ const useGetProducts = (API) => {
         const response = await axios(API);	  
         setProducts(response.data);
     }}
-    fetchData()
+    fetchData();
   }, [API]);
 
   return products;

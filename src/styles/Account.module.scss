@@ -1,4 +1,5 @@
-@use "./vars";
+@import "./vars";
+@import "mixins";
 
 .login {
   width: 100%;
@@ -17,11 +18,10 @@
   width: 150px;
   margin-bottom: 50px;
   justify-self: center;
-  display: none;
 }
 
 .title {
-  font-size: var(--lg);
+  font-size: $--lg;
   margin-bottom: 12px;
   text-align: start;
   margin-bottom: 30px;
@@ -38,35 +38,29 @@
 }
 
 .label {
-  font-size: var(--sm);
+  font-size: $--sm;
   font-weight: bold;
   margin-bottom: 4px;
 }
 
 .input {
-  background-color: var(--text-input-field);
+  background-color: $--text-input-field;
   border: none;
   border-radius: 8px;
-  height: 30px;
-  font-size: var(--md);
+  height: 36px;
+  font-size: $--md;
   padding: 6px;
   margin-bottom: 12px;
 }
 
-.input-name,
-.input-email,
-.input-password {
-  margin-bottom: 12px;
-}
-
 .primary-button {
-  background-color: var(--hospital-green);
+  background-color: $--hospital-green;
   border-radius: 8px;
   border: none;
   color: white;
   width: 100%;
   cursor: pointer;
-  font-size: var(--md);
+  font-size: $--md;
   font-weight: bold;
   height: 46px;
 }
@@ -82,6 +76,7 @@
     justify-content: space-between;
   }
   .form-container {
-    height: 100%;
+    margin-top: 10%;
+    height: 90%;
   }
 }

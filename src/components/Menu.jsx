@@ -1,14 +1,16 @@
-import React from "react";
-import { FaSignOutAlt } from "react-icons/fa";
-import Link from "next/link";
-import styles from "@styles/DesktopMenu.module.scss";
+import React from 'react';
+import { FaSignOutAlt } from 'react-icons/fa';
+import Link from 'next/link';
+import styles from '@styles/DesktopMenu.module.scss';
 
-function Menu(props) {
+function Menu() {
   return (
     <div class={styles.DesktopMenu}>
       <ul>
         <li>
-          <Link className={styles.title} href="/orders">My orders</Link>
+          <Link className={styles.title} href="/orders">
+            My orders
+          </Link>
         </li>
 
         <li>
@@ -17,7 +19,7 @@ function Menu(props) {
 
         <li>
           <Link href="/">
-            Sign out <FaSignOutAlt />{" "}
+            Sign out <FaSignOutAlt />{' '}
           </Link>
         </li>
       </ul>

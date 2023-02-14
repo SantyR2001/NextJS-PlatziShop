@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Image from "next/image";
-import Button from "../components/Buttons";
-import logoYardSale from "@logos/logo_yard_sale.svg";
-import "../styles/AccountData.scss";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Image from 'next/image';
+import Button from '../components/Buttons';
+import logoYardSale from '@logos/logo_yard_sale.svg';
+import '../styles/AccountData.scss';
 
 function AccountData(props) {
   return (
@@ -14,25 +14,25 @@ function AccountData(props) {
         <form className="form">
           <div>
             <label htmlFor="name" className="label">
-              {" "}
-              Name{" "}
+              {' '}
+              Name{' '}
             </label>
             <p className="value"> Jeff </p>
             <label htmlFor="email" className="label">
-              {" "}
-              Email{" "}
+              {' '}
+              Email{' '}
             </label>
             <p className="value"> Platzi@example.com </p>
             <label htmlFor="password" className="label">
-              {" "}
-              Password{" "}
+              {' '}
+              Password{' '}
             </label>
             <p className="value"> ******** </p>
           </div>
           <button className="secondary-button login-button">
             <Link to="/edit-account">Edit</Link>
           </button>
-          {/* <Button value="Edit" styleName="secondary-button login-button" />  */}
+          <Button value="Edit" styleName={['secondary-button']['login-button']} />
         </form>
       </div>
     </div>

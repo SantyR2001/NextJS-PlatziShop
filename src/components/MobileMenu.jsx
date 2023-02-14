@@ -1,6 +1,7 @@
-import React from "react";
-import { FaSignOutAlt } from "react-icons/fa";
-import styles from "@styles/MobileMenu.module.scss";
+import React from 'react';
+import { FaSignOutAlt } from 'react-icons/fa';
+import Link from 'next/link';
+import styles from '@styles/MobileMenu.module.scss';
 
 const MobileMenu = () => {
   return (
@@ -8,51 +9,51 @@ const MobileMenu = () => {
       <div className="mobile-menu inactive disp-none-mob">
         <ul>
           <li>
-            <a className="title">CATEGORIES</a>
+            <Link className="title">CATEGORIES</Link>
           </li>
 
           <li>
-            <a href="/">All</a>
+            <Link href="/">All</Link>
           </li>
 
           <li>
-            <a href="/">Clothes</a>
+            <Link href="/">Clothes</Link>
           </li>
 
           <li>
-            <a href="/">Electronics</a>
+            <Link href="/">Electronics</Link>
           </li>
 
           <li>
-            <a href="/">Furnitures</a>
+            <Link href="/">Furnitures</Link>
           </li>
 
           <li>
-            <a href="/">Toys</a>
+            <Link href="/">Toys</Link>
           </li>
 
           <li>
-            <a href="/">Others</a>
+            <Link href="/">Others</Link>
           </li>
         </ul>
         <ul>
           <li>
-            <a href="/">My orders</a>
+            <Link href="/">My orders</Link>
           </li>
 
           <li>
-            <a href="/">My account</a>
+            <Link href="/">My account</Link>
           </li>
         </ul>
         <ul>
           <li className="email">
-            <a href="/">Platzi@example.com</a>
+            <Link href="/">Platzi@example.com</Link>
           </li>
 
           <li className="sign-out">
-            <a href="/">
+            <Link href="/">
               Sign out <FaSignOutAlt />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

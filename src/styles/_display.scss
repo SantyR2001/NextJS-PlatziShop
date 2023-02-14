@@ -1,0 +1,36 @@
+@media (max-width: 740px) {
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 140px);
+      gap: 26px;
+    }
+  
+    .product-card {
+      width: 140px;
+    }
+  
+    .product-card img {
+      width: 140px;
+      height: 140px;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+    .menu {
+      display: block;
+      cursor: pointer;
+    }
+    .display-none-desk {
+      display: none !important;
+    }
+    .product-detail {
+      width: 100%;
+      border: none;
+    }
+  }
+  
+  @media (min-width: 741px) {
+    .display-none-mob {
+      display: none;
+    }
+  }
+  

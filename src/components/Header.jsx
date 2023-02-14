@@ -1,14 +1,15 @@
-import React, { useContext } from "react";
-import Menu from "./Menu";
-import Image from "next/image";
-import MobileMenu from "./MobileMenu";
-import iconCartMenu from "assets/icons/icon_shopping_cart.svg";
-import iconMenu from "@icons/icon_menu.svg";
-import logo from "@logos/logo_yard_sale.svg";
-import AppContext from "../context/AppContext";
-import MyOrder from "@containers/MyOrder";
-import useToggleShow from "../hooks/useToggleShow";
-import styles from "@styles/Header.module.scss";
+import React, { useContext } from 'react';
+import Menu from './Menu';
+import Image from 'next/image';
+import MobileMenu from './MobileMenu';
+import iconCartMenu from 'assets/icons/icon_shopping_cart.svg';
+import iconMenu from '@icons/icon_menu.svg';
+import logo from '@logos/logo_yard_sale.svg';
+import AppContext from '../context/AppContext';
+import MyOrder from '@containers/MyOrder';
+import useToggleShow from '../hooks/useToggleShow';
+import Link from 'next/link';
+import styles from '@styles/Header.module.scss';
 
 function Header() {
   const { state } = useContext(AppContext);
@@ -16,50 +17,37 @@ function Header() {
 
   return (
     <nav className={styles.nav}>
-      <Image
-        onClick={() => toggleShow("showMobileMenu")}
-        src={iconMenu}
-        alt="menu"
-        className={styles.menu}
-      />
+      <Image onClick={() => toggleShow('showMobileMenu')} src={iconMenu} alt="menu" className={styles.menu} />
       <div className={styles.navbarLeft}>
-        <Image src={logo} alt="logo" className={styles["navLogo"]} />
-        <ul className={`${styles["display-none-desk"]}`}>
+        <Image src={logo} alt="logo" className={`${styles.navLogo}${styles['display-none-desk']}}`} />
+        <ul className={styles['display-none-desk']}>
           <li>
-            <a href="/">All</a>
+            <Link href="/">All</Link>
           </li>
           <li>
-            <a href="/">Clothes</a>
+            <Link href="/">Clothes</Link>
           </li>
           <li>
-            <a href="/">Electronics</a>
+            <Link href="/">Electronics</Link>
           </li>
           <li>
-            <a href="/">Furnitures</a>
+            <Link href="/">Furnitures</Link>
           </li>
           <li>
-            <a href="/">Toys</a>
+            <Link href="/">Toys</Link>
           </li>
           <li>
-            <a href="/">Others</a>
+            <Link href="/">Others</Link>
           </li>
         </ul>
       </div>
       <div className={styles.navbarRight}>
         <ul>
-          <li
-            onClick={() => toggleShow("showDesktopMenu")}
-            className={styles.navbarEmail}
-          >
+          <li onClick={() => toggleShow('showDesktopMenu')} className={styles.navbarEmail}>
             platzi@example.com
           </li>
           <li className={styles.navbarShoppingCart}>
-            <Image
-              onClick={() => toggleShow("showCart")}
-              className="img-shopping-cart"
-              src={iconCartMenu}
-              alt="shopping-cart"
-            />
+            <Image onClick={() => toggleShow('showCart')} className="img-shopping-cart" src={iconCartMenu} alt="shopping-cart" />
             {state?.cart.length > 0 ? <div>{state.cart.length}</div> : null}
           </li>
         </ul>
