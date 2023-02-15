@@ -6,10 +6,10 @@ import styles from '@styles/ProductDetail.module.scss';
 
 function ProductDetail({ product, toggleShow }) {
   return (
-    <aside className={styles['product-detail']['inactive']}>
-      <div onClick={() => toggleShow()} className={styles["product-detail-close"]}>
-        <Image className={styles["close-product-detail-icon"]} src={imgClose} alt="close" width={15} height={15}/>
-      </div>
+    <aside className={styles['product-detail']}>
+      <button onClick={() => toggleShow()} className={styles['product-detail-close']}>
+        <Image className={styles['close-product-detail-icon']} src={imgClose} alt="close" width={14} height={14} />
+      </button>
       <ProductInfo product={product} />
     </aside>
   );

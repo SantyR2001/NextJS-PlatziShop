@@ -9,8 +9,8 @@ import Image from 'next/image';
 import styles from '@styles/ProductList.module.scss';
 
 function ProductItem({ product }) {
-  const { addToCart, removeFromCart } = useContext(AppContext);
-  const { toggleShow, toggleState } = useToggleShow();
+  const { addToCart, removeFromCart, state } = useContext(AppContext);
+  const { toggleShow, toggleState } = useToggleShow(state.toggleState);
   const [isAdded, setIsAdded] = useState(false);
 
   const handleClick = (item) => {
@@ -36,10 +36,10 @@ function ProductItem({ product }) {
         />
         <div className={styles['product-card-info']}>
           <div>
-            <p>${product.price}</p>
-            <p>{product.title}</p>
+            <p>${product?.price}</p>
+            <p>{product?.title}</p>
           </div>
-          <figure onClick={() => handleClick(product)}>{!isAdded === true ? <Image src={btnAdd} alt="AddToCart" /> : <Image src={btnAdded} alt="AddToCart" />}</figure>
+          <button onClick={() => handleClick(product)}>{!isAdded === true ? <Image src={btnAdd} alt="AddToCart" /> : <Image src={btnAdded} alt="AddToCart" />}</button>
         </div>
       </div>
       {toggleState.showProductDetail && <ProductDetail toggleShow={toggleShow} product={product} />}

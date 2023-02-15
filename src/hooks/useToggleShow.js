@@ -1,13 +1,6 @@
 import { useState } from 'react';
 
-const initialToggleState = {
-  showCart: false,
-  showMobileMenu: false,
-  showProductDetail: false,
-  showDesktopMenu: false,
-};
-
-const useToggleShow = () => {
+const useToggleShow = (initialToggleState) => {
   const [toggleState, setToggleState] = useState(initialToggleState);
 
   const toggleShow = (needed) => {

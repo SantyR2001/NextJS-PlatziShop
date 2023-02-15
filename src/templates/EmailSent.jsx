@@ -17,7 +17,7 @@ function EmailSent() {
         </div>
         <Button value="Log in" styleName={['primary-button']['login-button']} />
         <p className="resend">
-          <span>didn't receive the email?</span> <Link href="/">Resend</Link>
+          <span>didn´t receive the email?</span> <Link href="/">Resend</Link>
         </p>
       </div>
     </div>

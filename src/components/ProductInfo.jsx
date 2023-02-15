@@ -7,14 +7,18 @@ import styles from '@styles/ProductDetail.module.scss';
 
 function ProductInfo({ product }) {
   return (
-    <div className={styles["product-detail"]}>
-        <Image src={product.images[0] ? product.images[0] : defaultImage} className={styles["product-detail-Image"]} alt="product-image" width={360} height={300} />
+    <div className={styles['product-detail']}>
+      <Image src={product.images[0] ? product.images[0] : defaultImage} className={styles['product-detail-Image']} alt="product-image" width={360} height={300} />
       <div className={styles['product-info']}>
         <p>${product?.price}</p>
         <p>{product?.title}</p>
-        <p>{product?.description}</p>
-        <Button>
-          <Image src={imgAdd} alt="Add to cart"/>
+        <p>
+          <strong>Description:</strong>
+          <br />
+          {product?.description}
+        </p>
+        <Button styleName={['add-to-cart-btn']}>
+          <Image src={imgAdd} alt="Add to cart" />
         </Button>
       </div>
     </div>

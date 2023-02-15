@@ -46,16 +46,32 @@
   margin-left: 4px;
 }
 
-.product-card-info figure {
+.product-card-info button {
   margin: 0;
+  border: none;
+  background-color: $--white;
 }
 
-.product-card-info figure img {
+.product-card-info button img {
   margin-right: 4px;
   width: 45px;
   height: 45px;
 }
 
-.product-card-info figure img:hover {
+.product-card-info button img:hover {
   cursor: pointer;
+}
+
+@media (max-width: 525px ) {
+  .product-card {
+    width: 140px;
+  }
+  
+  .product-card img {
+    height: 140px;
+  }
+
+  .cards-container{
+    grid-template-columns: repeat(auto-fill, 140px);
+  }
 }

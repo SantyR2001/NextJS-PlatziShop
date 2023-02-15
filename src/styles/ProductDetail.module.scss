@@ -18,7 +18,7 @@
 }
 
 .product-detail-img {
-  width: 100%;
+  width: 100% !important;
   height: 300px !important;
   border-radius: 0 0 20px 20px;
   object-fit: cover;
@@ -56,12 +56,22 @@
 .product-detail-close {
   cursor: pointer;
   background-color: $--white;
-  width: 14px;
-  height: 14px;
-  position: fixed;
-  top: 80px;
-  right: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
   z-index: 2;
   padding: 12px;
   border-radius: 50%;
+  border: none;
+}
+
+@media (max-width: 525px ) {
+  .product-detail{
+    width: 100%;
+  }
 }

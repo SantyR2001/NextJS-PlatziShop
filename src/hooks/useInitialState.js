@@ -2,6 +2,12 @@ import { useState } from 'react';
 
 const initialState = {
   cart: [],
+  toggleState: {
+    showCart: false,
+    showMobileMenu: false,
+    showProductDetail: false,
+    showDesktopMenu: false,
+  },
 };
 
 const useInitialState = () => {

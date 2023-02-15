@@ -28,15 +28,26 @@
 }
 
 .add-to-cart-btn {
+  background-color: $--hospital-green;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: $--md;
+  font-weight: bold;
+  height: 46px;
+  transition: transform 0.2s;
   width: calc(100% - 48px) !important;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 24px;
+  bottom: 84px;
 }
 
 .secondary-button:hover,
-.primary-button:hover {
+.primary-button:hover,
+.add-to-cart-btn:hover {
   transform: scale(1.05);
 }
