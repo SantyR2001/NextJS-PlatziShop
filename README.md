@@ -12,6 +12,7 @@ This app simulates an **ecommerce** with fake data using the fakeApi of Platzi. 
 > Change your password
 > Authenticate
 > Explore the pages
+> Install the desktop app
 
 ## What can't you do
 
